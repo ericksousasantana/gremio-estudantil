@@ -12,10 +12,11 @@
 }
 
 header{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     padding: .5rem 5%;
     font-size: 1.2rem;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
 
     display: flex;
     justify-content: space-between;
@@ -23,25 +24,66 @@ header{
     flex-flow: row wrap;
     gap: 1rem;
 }
-.logo img{
-    width: 150px;
-    border-radius: 50%;
+.logo{
+    font-size: 4rem;
+    text-transform: uppercase;
 }
-nav a{
+.logo:hover{
+    border: none;
+}
+header a{
     font-weight: 500;
-    padding: .5rem;
+    padding: .3rem .5rem;
     margin: 0 .25rem;
-    border-radius: .5rem;
 }
-nav a:hover{
-    background-color: white;
+header a:hover{
+    border-top: 2px solid black;
     color: rgb(41, 12, 12);
-    transition: all .5s;
 }
 
 main{
+    width: 100%;
+    padding: 2%;
     margin-top: 2rem;
-    font-size: 2rem;
+
+
+    .title{
+        max-width: 1200px;
+        margin: 0rem auto;
+        padding: 1%;
+    }
+    .title p{
+        display: inline-block;
+        font-weight: 750;
+        font-size: 1.15rem;
+        color: rgb(228, 195, 8);
+        margin-bottom: 1.6rem;
+        margin-right: 1rem;
+    }
+    .title hr{
+        display: inline-block;
+        width: 5rem;
+        margin-bottom: .2rem;
+    }
+    .title h1{
+        font-size: 3rem;
+        font-weight: 600;
+        color: rgb(58, 50, 41);
+    }
+}
+section.container{
+    margin-top: 2rem;
+    width: 100%;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.card{
+    background-color: lightsalmon;
+    width: 350px;
+    height: 450px;
 }
 
 footer{
@@ -54,14 +96,18 @@ footer{
     justify-content: space-evenly;
     align-items: center;
 }
-footer nav{
+.footer__nav{
     display: flex;
     flex-flow: column nowrap;
-    gap: 1rem;
 }
-footer a{
-    margin: 0;
+.footer__nav a{
+    box-sizing: border-box;
     padding: .2rem;
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+.footer__nav a:hover{
+    color: rgb(67, 67, 192);
 }
 
 @media screen and (max-width:650px) {
