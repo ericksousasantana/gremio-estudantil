@@ -5,6 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nossas Propostas</title>
     <link rel="stylesheet" href="skeleton.css">
+    <style>
+        .propostas{
+            margin-top: 2rem;
+            padding: 1rem;
+            max-width: 1000px;
+            margin: auto;
+
+            h1{
+                text-align: center;
+                font-size: 2.5rem;
+                font-weight: 400;
+                text-decoration: 1.5px underline;
+            }
+        }
+        .proposta{
+
+            p.item{
+                margin: 1rem;
+                font-weight: 600;
+                font-size: 1.3rem;
+                position: relative;
+            }
+            img{
+                width: 6rem;
+            }
+        }
+        p.item:before{
+                content: "";
+                position: absolute;
+                width: .5rem;
+                height: .5rem;
+                background-color: black;
+                border-radius: 50%;
+                top: .6rem;
+                left: -1.5rem;
+            }
+        .proposta__header{
+            border-radius: 3rem;
+            padding: .65rem;
+            margin-top: 2rem;
+
+            display: flex;
+            align-items: center;
+            gap: 5rem;
+
+            h2{
+                font-weight: 500;
+                font-size: 2rem;
+                color: white;
+                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.592);
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,35 +73,68 @@
     <main>
         <section class="propostas">
             <h1>Propostas</h1>
-            <h2>Caridade</h2>
-            <p>
-                tampinha solidaria; <br>
-                agasalho solidário; <br>
-                aluno solidario, cronograma de limpeza para ajudar a manter a escola limpeza.
-            </p>
+            <div class="proposta">
+                <div class="proposta__header" style="background-image: linear-gradient(to right, lightcoral, white 110%);">
+                    <img src="imagens/caridade.png" alt="Caridade">
+                    <h2>Caridade</h2>
+                </div>
+                    <p class="item">tampinha solidária:
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum ab, consequatur unde saepe illo.</p>
+                    </p>
+                    <p class="item">agasalho solidário:
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum ab, consequatur unde saepe illo.</p></p>
+                    <p class="item">aluno solidário:
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum ab, consequatur unde saepe illo.</p></p>
+            </div>
 
-            <h2>Esportes</h2>
-            <p>
-                interclasse anual e bimestral; <br>
-                pingpong nos intervalos; <br>
-                jogos de tabuleiro nos intervalos/campeonatos.
-            </p>
+            <div class="proposta">
+                <div class="proposta__header" style="background-image: linear-gradient(to right, blue, white 110%);">
+                    <img src="imagens/sports.png" alt="Esportes">
+                    <h2>Esportes</h2>
+                </div>
+                <p>
+                    <p class="item">interclasse anual e bimestral:
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum ab, consequatur unde saepe illo.</p></p>
+                    <p class="item">pingpong nos intervalos:
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum ab, consequatur unde saepe illo.</p></p>
+                    <p class="item">jogos de tabuleiro nos intervalos/campeonatos:
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum ab, consequatur unde saepe illo.</p></p>
+                </p>
+            </div>
 
-            <h2>Higiene</h2>
-            <p>
-                higiene feminina(absorventes, sabonete e alcool); <br>
-                espelhos nos banheiros; <br>
-                aluno solidario, cronograma de limpeza para ajudar a manter a escola limpeza.
-            </p>
+            <div class="proposta">
+                <div class="proposta__header" style="background-image: linear-gradient(to right, #51FDFF, white 110%);">
+                    <img src="imagens/higiene.png" alt="Higiene">
+                    <h2>Higiene</h2>
+                </div>
+                <p>
+                    <p class="item">higiene feminina(absorventes, sabonete e alcool):
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum ab, consequatur unde saepe illo.</p></p>
+                    <p class="item">espelhos nos banheiros:
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum ab, consequatur unde saepe illo.</p></p>
+                    <p class="item">aluno solidario, cronograma de limpeza para ajudar a manter a escola limpeza:
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum ab, consequatur unde saepe illo.</p></p>
+                </p>
+            </div>
 
-            <h2>Eventos</h2>
-            <p>
-                festas tematicas; <br>
-                trotes; <br>
-                formatura para os terceiros; <br>
-                show de talentos; <br>
-                incentivo aos empreendedores e jogos para arrecadação de fundos (bingo, pesca, correio elegante, barraquinhas de comida, etc).
-            </p>
+            <div class="proposta">
+                <div class="proposta__header" style="background-image: linear-gradient(to right, #FFD30F, white 110%);">
+                    <img src="imagens/talento.png" alt="Talento">
+                    <h2>Eventos</h2>
+                </div>
+                <p>
+                    <p class="item">festas tematicas:
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum ab, consequatur unde saepe illo.</p></p>
+                    <p class="item">trotes:
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum ab, consequatur unde saepe illo.</p></p>
+                    <p class="item">formatura para os terceiros:
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum ab, consequatur unde saepe illo.</p></p>
+                    <p class="item">show de talentos:
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum ab, consequatur unde saepe illo.</p></p>
+                    <p class="item">incentivo aos empreendedores e jogos para arrecadação de fundos (bingo, pesca, correio elegante, barraquinhas de comida, etc):
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum ab, consequatur unde saepe illo.</p></p>
+                </p>
+            </div>
             
 
         </section>
