@@ -1,64 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nossas Propostas</title>
     <link rel="stylesheet" href="skeleton.css">
-    <style>
-        .propostas{
-            margin-top: 2rem;
-            padding: 1rem;
-            max-width: 1000px;
-            margin: auto;
-
-            h1{
-                text-align: center;
-                font-size: 2.5rem;
-                font-weight: 400;
-                text-decoration: 1.5px underline;
-            }
-        }
-        .proposta{
-
-            p.item{
-                margin: 1rem;
-                font-weight: 600;
-                font-size: 1.3rem;
-                position: relative;
-            }
-            img{
-                width: 6rem;
-            }
-        }
-        p.item:before{
-                content: "";
-                position: absolute;
-                width: .5rem;
-                height: .5rem;
-                background-color: black;
-                border-radius: 50%;
-                top: .6rem;
-                left: -1.5rem;
-            }
-        .proposta__header{
-            border-radius: 3rem;
-            padding: .65rem;
-            margin-top: 2rem;
-
-            display: flex;
-            align-items: center;
-            gap: 5rem;
-
-            h2{
-                font-weight: 500;
-                font-size: 2rem;
-                color: white;
-                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.592);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="propostas.css">
 </head>
+
 <body>
     <header>
         <a href="index.html" class="logo">elo</a>
@@ -66,7 +16,8 @@
             <a href="index.html">Índice</a>
             <a href="propostas.html">Propostas</a>
             <a href="equipe.html">Equipe</a>
-            <a href="#">Contato</a>
+            <a href="https://chat.whatsapp.com/GuWXuLw4pzcKoBasJlmgz8
+            " target="_blank">Contato</a>
         </nav>
     </header>
 
@@ -74,17 +25,48 @@
         <section class="propostas">
             <h1>Propostas</h1>
             <div class="proposta">
-                <div class="proposta__header" style="background-image: linear-gradient(to right, lightcoral, white 110%);">
+                <div class="proposta__header"
+                    style="background-image: linear-gradient(to right, lightcoral, white 110%);">
                     <img src="imagens/caridade.png" alt="Caridade">
                     <h2>Caridade</h2>
                 </div>
-                    <p class="item">tampinha solidária:
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum ab, consequatur unde saepe illo.</p>
-                    </p>
-                    <p class="item">agasalho solidário:
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum ab, consequatur unde saepe illo.</p></p>
-                    <p class="item">aluno solidário:
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum ab, consequatur unde saepe illo.</p></p>
+
+                <div class="item">
+                    <h3>tampinha solidária:</h3>
+                    <div class="hero">
+                        <p>Tampinhas que Curam é um projeto socioambiental totalmente voluntário que arrecada tampinhas
+                            plásticas e lacres de latinhas e reverte o valor da reciclagem para crianças com câncer.</p>
+                        <img src="imagens/tampinhas.png" alt="Tampinhas" class="item__imagem">
+                    </div>
+                    <a href="https://tampinhasquecuram.com.br/" target="_blank">Saiba mais</a>
+                </div>
+
+                <div class="item">
+                    <h3>agasalho solidário:</h3>
+                    <p>Ação voluntária que arrecada agasalhos, cobertores e roupas de frio para pessoas em situação de
+                        vulnerabilidade, levando calor e conforto a quem mais precisa nos dias mais frios do ano.</p>
+                </div>
+
+                <div class="item">
+                    <h3>aluno solidário:</h3>
+                    <p>🌟 Seja um Aluno Solidário e faça a diferença! 🌟  <br>
+
+                        Você quer ajudar a tornar nossa escola um lugar melhor e ainda ser reconhecido por isso? Então
+                        venha fazer parte do Aluno Solidário!  <br>
+ <br>
+                        🔹 O que você ganha? <br>
+                        ✔️ Certificado de participação para valorizar seu esforço <br>
+                        ✔️ Pontos extras em atividades escolares <br>
+                        ✔️ Medalhas e brindes para os destaques do projeto <br>
+                        ✔️ Uma experiência incrível de trabalho em equipe e solidariedade <br>
+ <br>
+                        🔹 O que você faz? <br>
+                        ✅ Ajuda na limpeza e organização da escola <br>
+                        ✅ Recolhe tampinhas plásticas para o projeto "Tampinhas que Curam" <br>
+                        ✅ Participa de outras ações para tornar o ambiente escolar organizado e acolhedor <br>
+ <br>
+                        Junte-se a nós e mostre que pequenas atitudes criam um grande impacto! 💙💪</p>
+                </div>
             </div>
 
             <div class="proposta">
@@ -93,13 +75,31 @@
                     <h2>Esportes</h2>
                 </div>
                 <p>
-                    <p class="item">interclasse anual e bimestral:
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum ab, consequatur unde saepe illo.</p></p>
-                    <p class="item">pingpong nos intervalos:
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum ab, consequatur unde saepe illo.</p></p>
-                    <p class="item">jogos de tabuleiro nos intervalos/campeonatos:
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum ab, consequatur unde saepe illo.</p></p>
-                </p>
+                <div class="item">
+                    <h3>interclasse anual e bimestral:</h3>
+                    <p>Organizaremos 1 campeonato por bimestre com time livre e 1 Interclasse no ano com premiação. Os esportes serão: <br>
+                    - Vôlei 🏐; <br>
+                    - Basquete 🏀; <br>
+                    - Futebol ⚽; <br>
+                    - Xadrez ♟️.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <h3>pingpong nos intervalos:</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae
+                        dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum
+                        ab,
+                        consequatur unde saepe illo.</p>
+                </div>
+
+                <div class="item">
+                    <h3>jogos de tabuleiro nos intervalos/campeonatos:</h3>
+                    <div class="hero">
+                        <p>Jogos de tabuleiro e jogos de carta como UNO disponíveis para o uso dos alunos nos itervalos e aulas vaga.</p>
+                        <img src="imagens/jogos.webp" alt="Jogos">
+                    </div>
+                </div>
             </div>
 
             <div class="proposta">
@@ -108,13 +108,27 @@
                     <h2>Higiene</h2>
                 </div>
                 <p>
-                    <p class="item">higiene feminina(absorventes, sabonete e alcool):
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum ab, consequatur unde saepe illo.</p></p>
-                    <p class="item">espelhos nos banheiros:
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum ab, consequatur unde saepe illo.</p></p>
-                    <p class="item">aluno solidario, cronograma de limpeza para ajudar a manter a escola limpeza:
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum ab, consequatur unde saepe illo.</p></p>
-                </p>
+                <div class="item">
+                    <h3>higiene feminina(absorventes, sabonete e alcool):</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae
+                        dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum
+                        ab,
+                        consequatur unde saepe illo.</p>
+                </div>
+                <div class="item">
+                    <h3>espelhos nos banheiros:</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae
+                        dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum
+                        ab,
+                        consequatur unde saepe illo.</p>
+                </div>
+                <div class="item">
+                    <h3>aluno solidario, cronograma de limpeza para ajudar a manter a escola limpeza:</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae
+                        dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum
+                        ab,
+                        consequatur unde saepe illo.</p>
+                </div>
             </div>
 
             <div class="proposta">
@@ -123,31 +137,60 @@
                     <h2>Eventos</h2>
                 </div>
                 <p>
-                    <p class="item">festas tematicas:
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum ab, consequatur unde saepe illo.</p></p>
-                    <p class="item">trotes:
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum ab, consequatur unde saepe illo.</p></p>
-                    <p class="item">formatura para os terceiros:
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum ab, consequatur unde saepe illo.</p></p>
-                    <p class="item">show de talentos:
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum ab, consequatur unde saepe illo.</p></p>
-                    <p class="item">incentivo aos empreendedores e jogos para arrecadação de fundos (bingo, pesca, correio elegante, barraquinhas de comida, etc):
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum ab, consequatur unde saepe illo.</p></p>
-                </p>
+                <div class="item">
+                    <h3>festas tematicas:</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae
+                        dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum
+                        ab,
+                        consequatur unde saepe illo.</p>
+                </div>
+                <div class="item">
+                    <h3>volta dos trotes:</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae
+                        dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum
+                        ab,
+                        consequatur unde saepe illo.</p>
+                </div>
+                <div class="item">
+                    <h3>formatura para os terceiros:</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae
+                        dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum
+                        ab,
+                        consequatur unde saepe illo.</p>
+                </div>
+                <div class="item">
+                    <h3>show de talentos:</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae
+                        dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum
+                        ab,
+                        consequatur unde saepe illo.</p>
+                </div>
+                <div class="item">
+                    <h3>
+                        incentivo aos empreendedores e jogos para arrecadação de fundos (bingo, correio
+                        elegante, barraquinhas de comida, etc):
+                    </h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus iste repudiandae rerum, quae
+                        dolorem delectus aliquam tenetur suscipit recusandae culpa quo in cupiditate explicabo nostrum
+                        ab,
+                        consequatur unde saepe illo.</p>
+                </div>
             </div>
-            
+
 
         </section>
     </main>
 
-   <!-- <footer>
+    <footer>
         <a href="index.html" class="logo">elo</a>
         <nav class="footer__nav">
             <a href="index.html">Índice</a>
             <a href="propostas.html">Propostas</a>
             <a href="equipe.html">Equipe</a>
-            <a href="#">Contato</a>
+            <a href="https://chat.whatsapp.com/GuWXuLw4pzcKoBasJlmgz8
+            " target="_blank">Contato</a>
         </nav>
-    </footer>-->
+    </footer>
 </body>
+
 </html>
