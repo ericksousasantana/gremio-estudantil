@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/*
+    RESET, FOOTER E HEADER
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -43,6 +47,17 @@ header a {
 header a:hover {
     border-top: 2px solid black;
     color: rgb(41, 12, 12);
+}
+header nav{
+    display: flex;
+    align-items: center;
+}
+
+.insta {
+    img {
+        width: min(7vw, 2.5rem);
+        border-radius: .75rem;
+    }
 }
 
 footer {
